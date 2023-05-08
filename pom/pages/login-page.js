@@ -9,6 +9,7 @@ exports.LoginPage = class LoginPage {
   constructor(page) {
     this.page = page;
     this.user = page.locator('[data-test="username"]');
+   // this.user = page.getByPlaceholder('Username'); manera de localizar elementos desde la versión 1.27
     this.pass = page.locator('[data-test="password"]');
     this.loginButton = page.locator('[data-test="login-button"]');
     
